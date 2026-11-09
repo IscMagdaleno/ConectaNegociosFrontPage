@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650" width="650" height="650" role="img" aria-label="Abanico · Finanzas: Recorte cuadrado del resumen del mes: ventas, compras, gastos y resultado.">
+<title>Abanico · Finanzas</title>
+<desc>Recorte cuadrado del resumen del mes: ventas, compras, gastos y resultado.</desc>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14163a"/><stop offset="0.55" stop-color="#1a1040"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="r1" cx="0.15" cy="0" r="0.8"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.35"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="r2" cx="1" cy="0" r="0.7"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="650" height="650" fill="url(#g)"/>
+<rect width="650" height="650" fill="url(#r1)"/>
+<rect width="650" height="650" fill="url(#r2)"/>
+<rect x="16" y="16" width="618" height="618" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="14 10"/>
+<g font-family="'Segoe UI', Roboto, Arial, sans-serif">
+<g transform="translate(295.5 228) scale(2.4583333333333335)" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-5-5L5 21"/></g>
+<text x="325" y="324" text-anchor="middle" font-size="19" font-weight="700" letter-spacing="3" fill="#ffffff">IMAGEN PENDIENTE</text>
+<text x="325" y="348" text-anchor="middle" font-size="16" fill="#7c5cff">Abanico · Finanzas · pantalla-finanzas.svg · 650×650</text>
+<text x="325" y="394" text-anchor="middle" font-size="19" fill="#a7b0c9">Recorte cuadrado del resumen del mes:</text>
+<text x="325" y="422" text-anchor="middle" font-size="19" fill="#a7b0c9">ventas, compras, gastos y resultado.</text>
+</g>
+</svg>

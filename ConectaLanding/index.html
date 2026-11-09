@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conecta Negocios · Tu puerta a la tecnología</title>
+  <meta name="description" content="Conecta Negocios pone al alcance de cualquier comercio su presencia digital, su catálogo y su relación con clientes. Conecta Control es el sistema para operar el día a día.">
+  <meta name="theme-color" content="#070b1e">
+
+  <!-- Al compartir en redes: cambia og-imagen.svg por un PNG o JPG de 1200×630 (las redes no leen SVG). -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Conecta Negocios · Tu puerta a la tecnología">
+  <meta property="og:description" content="Presencia digital, catálogo, publicaciones con IA y un sistema para operar tu negocio.">
+  <meta property="og:image" content="assets/img/og-imagen.svg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="is-loading">
+
+  <!-- ============ Preloader ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__brand">Conecta<span>_</span></div>
+    <div class="preloader__bars">
+      <span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span>
+    </div>
+  </div>
+
+  <!-- Fondo vivo: degradado + partículas que reaccionan al cursor -->
+  <div class="bg" aria-hidden="true"></div>
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+  <canvas id="trail" class="trail" aria-hidden="true"></canvas>
+
+  <!-- ============ Encabezado ============ -->
+  <header class="hd" id="hd">
+    <div class="container hd__inner">
+      <a href="#inicio" class="logo" aria-label="Conecta, ir al inicio">Conecta<i>_</i></a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#negocios" data-link="negocios">Negocios</a>
+        <a href="#control" data-link="control">Control</a>
+        <a href="#planes" data-link="planes">Planes</a>
+        <a href="#faq" data-link="faq">Preguntas</a>
+        <a href="#contacto" data-link="contacto">Contacto</a>
+      </nav>
+
+      <div class="hd__actions">
+        <a href="#planes" class="btn btn--fill hd__cta">Crear mi negocio</a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__nav" aria-label="Menú móvil">
+      <a href="#negocios">Negocios</a>
+      <a href="#control">Control</a>
+      <a href="#planes">Planes</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#planes" class="btn btn--fill">Crear mi negocio</a>
+  </div>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg">
+        <!-- IMAGEN: hero-fondo -->
+        <img src="assets/img/hero-fondo.svg" alt="Dueña de un negocio local atendiendo con el celular en la mano" width="1920" height="1080">
+      </div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow">// Para negocios locales</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Tu puerta</span></span>
+          <span class="line"><span>a la tecnología<i>_</i></span></span>
+        </h1>
+        <p class="hero__lead">
+          Conecta Negocios pone al alcance de cualquier comercio su presencia digital, su catálogo y su relación con los clientes.
+          Conecta Control es el sistema con el que opera el día a día.
+        </p>
+        <div class="hero__cta">
+          <a href="#planes" class="btn btn--fill">Crear mi negocio</a>
+          <a href="#planes" class="btn">Ver planes</a>
+        </div>
+      </div>
+
+      <div class="container hero__foot">
+        <ul class="hero__tags" aria-label="Qué incluye">
+          <li>Presencia</li><li aria-hidden="true">/</li>
+          <li>Catálogo</li><li aria-hidden="true">/</li>
+          <li>Publicaciones</li><li aria-hidden="true">/</li>
+          <li>Clientes</li>
+        </ul>
+        <a href="#negocios" class="hero__scroll" aria-label="Bajar a Negocios"><span></span>Desliza</a>
+      </div>
+    </section>
+
+    <!-- ============ Marquesina ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Presencia</span><b></b><span>Catálogo</span><b></b><span>Publicaciones</span><b></b><span>Clientes</span><b></b><span>IA a tu alcance</span><b></b>
+        </div>
+        <div class="marquee__group">
+          <span>Presencia</span><b></b><span>Catálogo</span><b></b><span>Publicaciones</span><b></b><span>Clientes</span><b></b><span>IA a tu alcance</span><b></b>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ Conecta Negocios (tarjetas apiladas) ============ -->
+    <section class="section work" id="negocios">
+      <div class="container">
+        <header class="section__head" data-reveal="up">
+          <p class="eyebrow">// Conecta Negocios</p>
+          <h2 class="h2">Lo que logra tu negocio<span class="us">_</span></h2>
+          <p class="section__lead">Una red social de negocios locales. Das de alta tu negocio, muestras lo que vendes y los clientes te encuentran y te escriben. Ellos nunca pagan.</p>
+        </header>
+
+        <div class="work__stack">
+
+          <article class="work__card" style="--i:0">
+            <div class="work__top">
+              <div>
+                <h3 class="work__title">Presencia<span class="us">_</span></h3>
+                <p class="work__text">Tu perfil público con logo, horarios, ubicación y redes. Un enlace y un QR para compartirlo donde quieras.</p>
+              </div>
+              <ul class="work__tags">
+                <li class="dim">Incluye</li><li>Perfil público</li><li>Logo y horarios</li><li>Enlace y QR</li><li class="num">01</li>
+              </ul>
+            </div>
+            <figure class="work__img">
+              <!-- IMAGEN: trabajo-presencia -->
+              <img src="assets/img/trabajo-presencia.svg" alt="Perfil público de un negocio en Conecta Negocios" width="1400" height="640" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="work__card" style="--i:1">
+            <div class="work__top">
+              <div>
+                <h3 class="work__title">Catálogo<span class="us">_</span></h3>
+                <p class="work__text">Productos y servicios que el cliente ve y con los que contacta al negocio, directo y sin intermediarios.</p>
+              </div>
+              <ul class="work__tags">
+                <li class="dim">Incluye</li><li>Productos</li><li>Servicios</li><li>Contacto directo</li><li class="num">02</li>
+              </ul>
+            </div>
+            <figure class="work__img">
+              <!-- IMAGEN: trabajo-catalogo -->
+              <img src="assets/img/trabajo-catalogo.svg" alt="Catálogo de productos en cuadrícula" width="1400" height="640" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="work__card" style="--i:2">
+            <div class="work__top">
+              <div>
+                <h3 class="work__title">Publicaciones e IA<span class="us">_</span></h3>
+                <p class="work__text">Ofertas, eventos y noticias en el feed de Conecta y, si quieres, en tu Facebook. La IA te ayuda con el texto y la imagen.</p>
+              </div>
+              <ul class="work__tags">
+                <li class="dim">Incluye</li><li>Ofertas</li><li>Eventos</li><li>Facebook</li><li>Texto e imagen con IA</li><li class="num">03</li>
+              </ul>
+            </div>
+            <figure class="work__img">
+              <!-- IMAGEN: trabajo-publicaciones -->
+              <img src="assets/img/trabajo-publicaciones.svg" alt="Publicación de oferta con imagen mejorada con IA" width="1400" height="640" loading="lazy">
+            </figure>
+          </article>
+
+          <article class="work__card" style="--i:3">
+            <div class="work__top">
+              <div>
+                <h3 class="work__title">Clientes<span class="us">_</span></h3>
+                <p class="work__text">Reseñas, comentarios y mensajes directos. Con «Se busca», el cliente pide lo que no encontró y se avisa a los negocios relacionados.</p>
+              </div>
+              <ul class="work__tags">
+                <li class="dim">Incluye</li><li>Reseñas</li><li>Mensajes</li><li>«Se busca»</li><li class="num">04</li>
+              </ul>
+            </div>
+            <figure class="work__img">
+              <!-- IMAGEN: trabajo-clientes -->
+              <img src="assets/img/trabajo-clientes.svg" alt="Chat entre cliente y negocio" width="1400" height="640" loading="lazy">
+            </figure>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Cómo funciona ============ -->
+    <section class="section how" id="como">
+      <div class="container how__grid">
+        <div class="how__text">
+          <p class="eyebrow" data-reveal="up">// Cómo funciona</p>
+          <p class="lit">Das de alta tu negocio, completas tu perfil y los clientes empiezan a encontrarte y a escribirte. Sin ser experto en tecnología y sin renta fija: pagas solo por lo que usas.</p>
+
+          <ol class="steps" data-reveal-group>
+            <li>
+              <span class="steps__n">01</span>
+              <h3>Alta</h3>
+              <p>Crea tu cuenta en minutos y elige tu plan. El Esencial es gratuito.</p>
+            </li>
+            <li>
+              <span class="steps__n">02</span>
+              <h3>Completa tu perfil</h3>
+              <p>Sube tu logo, tus horarios y tus primeros productos o servicios.</p>
+            </li>
+            <li>
+              <span class="steps__n">03</span>
+              <h3>Te encuentran y te escriben</h3>
+              <p>Publica ofertas y deja que los clientes te contacten por mensaje o por WhatsApp.</p>
+            </li>
+          </ol>
+        </div>
+
+        <figure class="how__img" data-reveal="zoom">
+          <!-- IMAGEN: about-negocio -->
+          <img src="assets/img/about-negocio.svg" alt="Comerciante mostrando su perfil de Conecta en el celular" width="900" height="1100" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Conecta Control ============ -->
+    <section class="section control" id="control">
+      <div class="container">
+        <header class="section__head" data-reveal="up">
+          <p class="eyebrow">// Conecta Control</p>
+          <h2 class="h2">El sistema para operar tu día a día<span class="us">_</span></h2>
+          <p class="section__lead">Caja, inventario, clientes y más, en módulos que activas solo cuando los necesitas. Los módulos no se cobran por estar activos: pagas el uso.</p>
+        </header>
+
+        <div class="control__split">
+          <div class="control__tabs" data-reveal="left">
+            <div class="tabs" role="tablist" aria-label="Cómo usar Control" data-mode="solo" id="ctrl-tabs">
+              <span class="tabs__pill" aria-hidden="true"></span>
+              <button type="button" role="tab" class="tabs__btn is-active" aria-selected="true" data-tab="solo">Por separado</button>
+              <button type="button" role="tab" class="tabs__btn" aria-selected="false" data-tab="conectado">Conectado a Negocios</button>
+            </div>
+
+            <div class="ctrl-panel is-active" data-panel="solo">
+              <h3>Úsalo solo, sin necesitar Negocios</h3>
+              <p>Conecta Control funciona por sí mismo como punto de venta y sistema del negocio. Quien ya tiene Control no está obligado a Negocios.</p>
+              <ul class="ticks">
+                <li>Cobra en caja con ticket, incluso sin internet.</li>
+                <li>Controla productos, entradas de mercancía y existencias.</li>
+                <li>Lleva clientes, crédito y apartados.</li>
+                <li>Cierra el día con tu corte de caja.</li>
+              </ul>
+            </div>
+
+            <div class="ctrl-panel" data-panel="conectado">
+              <h3>Conéctalo con un botón</h3>
+              <p>Si también usas Conecta Negocios, vincula las dos cuentas. Quien ya tiene Negocios no está obligado a Control, y la conexión se puede revocar.</p>
+              <ul class="ticks">
+                <li>Publica tu catálogo sin volver a capturar nada.</li>
+                <li>Promociones y cupones que se canjean en caja.</li>
+                <li>Mira cómo las campañas se convierten en ventas.</li>
+                <li>Un solo lugar para tu operación y tu presencia.</li>
+              </ul>
+            </div>
+
+            <a href="#contacto" class="btn">Quiero verlo en acción</a>
+          </div>
+
+          <figure class="control__img" data-reveal="right">
+            <!-- IMAGEN: control-pos -->
+            <img src="assets/img/control-pos.svg" alt="Punto de venta de Conecta Control en pantalla completa" width="1500" height="940" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="circles" data-reveal-group>
+          <article class="circle">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <h3>Punto de venta</h3>
+            <p>Cobra rápido con código o búsqueda, tu cambio se calcula solo y la siguiente venta no espera.</p>
+          </article>
+          <article class="circle">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 9.4 7.5 4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg>
+            <h3>Inventario y compras</h3>
+            <p>Sabe qué hay, qué falta y a qué proveedor pedirle. Escanea tickets y la IA te ayuda a capturar.</p>
+          </article>
+          <article class="circle">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>Clientes y crédito</h3>
+            <p>Cartera, abonos, apartados y cupones de lealtad para que vuelvan.</p>
+          </article>
+        </div>
+
+        <!-- Abanico de pantallas -->
+        <div class="fan" id="fan">
+          <figure class="fan__card" data-label="Punto de venta">
+            <!-- IMAGEN: pantalla-pos -->
+            <img src="assets/img/pantalla-pos.svg" alt="Pantalla del punto de venta" width="650" height="650" loading="lazy">
+          </figure>
+          <figure class="fan__card" data-label="Inventario">
+            <!-- IMAGEN: pantalla-inventario -->
+            <img src="assets/img/pantalla-inventario.svg" alt="Pantalla de inventario" width="650" height="650" loading="lazy">
+          </figure>
+          <figure class="fan__card" data-label="Clientes y crédito">
+            <!-- IMAGEN: pantalla-clientes -->
+            <img src="assets/img/pantalla-clientes.svg" alt="Pantalla de clientes y crédito" width="650" height="650" loading="lazy">
+          </figure>
+          <figure class="fan__card" data-label="Corte de caja">
+            <!-- IMAGEN: pantalla-corte -->
+            <img src="assets/img/pantalla-corte.svg" alt="Pantalla del corte de caja" width="650" height="650" loading="lazy">
+          </figure>
+          <figure class="fan__card" data-label="Finanzas">
+            <!-- IMAGEN: pantalla-finanzas -->
+            <img src="assets/img/pantalla-finanzas.svg" alt="Pantalla de finanzas del mes" width="650" height="650" loading="lazy">
+          </figure>
+          <figure class="fan__card" data-label="Asistente IA">
+            <!-- IMAGEN: pantalla-asistente -->
+            <img src="assets/img/pantalla-asistente.svg" alt="Pantalla del asistente con inteligencia artificial" width="650" height="650" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Pago por uso (sección clara) ============ -->
+    <section class="section section--light usage" id="uso">
+      <div class="container">
+        <header class="section__head section__head--center" data-reveal="up">
+          <p class="eyebrow">// Pagas lo que usas</p>
+          <h2 class="h2">Sin renta fija. Sin sorpresas<span class="us">_</span></h2>
+          <p class="section__lead">Siempre puedes ver cuánto has consumido y cuánto cuesta. Las tarifas son claras y accesibles.</p>
+        </header>
+
+        <div class="counters" data-reveal-group>
+          <div class="counter">
+            <span class="counter__n"><span data-count="3">0</span></span>
+            <h3>Planes para comparar</h3>
+            <p>Esencial, Conecta y Pro. Elige el que va con tu negocio y cámbialo cuando crezcas.</p>
+          </div>
+          <div class="counter">
+            <span class="counter__n"><span data-count="30">0</span>+</span>
+            <h3>Módulos en Conecta Control</h3>
+            <p>Activa solo los que necesitas. Si tu proceso es distinto, pide uno a la medida.</p>
+          </div>
+          <div class="counter">
+            <span class="counter__n">$<span data-count="0">0</span></span>
+            <h3>Para crear tu negocio</h3>
+            <p>El plan Esencial es gratuito: presencia y catálogo desde el primer día.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Testimonios ============ -->
+    <section class="section testi" id="testimonios">
+      <div class="container">
+        <header class="section__head testi__head" data-reveal="up">
+          <div>
+            <p class="eyebrow">// Confían en Conecta</p>
+            <h2 class="h2">Negocios que ya dieron el paso<span class="us">_</span></h2>
+          </div>
+          <div class="slider__nav">
+            <button type="button" class="round" id="sl-prev" aria-label="Anterior">←</button>
+            <button type="button" class="round" id="sl-next" aria-label="Siguiente">→</button>
+          </div>
+        </header>
+      </div>
+
+      <div class="slider" id="slider" tabindex="0" aria-label="Testimonios">
+        <!-- TEXTOS DE EJEMPLO: reemplazar por testimonios reales antes de publicar -->
+        <article class="quote">
+          <span class="quote__flag">Ejemplo</span>
+          <p>“Antes anotaba todo en una libreta. Ahora cobro en la caja, veo mi inventario y mis clientes me escriben directo.”</p>
+          <footer>
+            <!-- IMAGEN: testimonio-1 -->
+            <img src="assets/img/testimonio-1.svg" alt="Foto de la persona que da el testimonio" width="240" height="240" loading="lazy">
+            <div><strong>Nombre Apellido</strong><span>Dueña de una miscelánea</span></div>
+          </footer>
+        </article>
+        <article class="quote">
+          <span class="quote__flag">Ejemplo</span>
+          <p>“Subí mis productos una sola vez y ya aparecen en mi perfil. Las ofertas con ayuda de la IA me ahorran horas.”</p>
+          <footer>
+            <!-- IMAGEN: testimonio-2 -->
+            <img src="assets/img/testimonio-2.svg" alt="Foto de la persona que da el testimonio" width="240" height="240" loading="lazy">
+            <div><strong>Nombre Apellido</strong><span>Dueño de una cafetería</span></div>
+          </footer>
+        </article>
+        <article class="quote">
+          <span class="quote__flag">Ejemplo</span>
+          <p>“Con «Se busca» me enteré de lo que la gente andaba pidiendo y empecé a venderlo.”</p>
+          <footer>
+            <!-- IMAGEN: testimonio-3 -->
+            <img src="assets/img/testimonio-3.svg" alt="Foto de la persona que da el testimonio" width="240" height="240" loading="lazy">
+            <div><strong>Nombre Apellido</strong><span>Encargada de una papelería</span></div>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ Planes ============ -->
+    <section class="section pricing" id="planes">
+      <div class="container">
+        <header class="section__head section__head--center" data-reveal="up">
+          <p class="eyebrow">// Planes de Conecta Negocios</p>
+          <h2 class="h2">Elige tu ritmo<span class="us">_</span></h2>
+          <p class="section__lead">Empieza gratis y crece cuando lo necesites. Puedes cambiar de plan en cualquier momento.</p>
+
+          <div class="tabs tabs--center" role="tablist" aria-label="Periodo de pago" data-mode="m" id="price-tabs">
+            <span class="tabs__pill" aria-hidden="true"></span>
+            <button type="button" role="tab" class="tabs__btn is-active" aria-selected="true" data-period="m">Mensual</button>
+            <button type="button" role="tab" class="tabs__btn" aria-selected="false" data-period="a">Anual · ahorra</button>
+          </div>
+        </header>
+
+        <div class="plans" data-reveal-group>
+
+          <article class="plan">
+            <h3>Esencial</h3>
+            <p class="plan__who">Para entrar a la red y mostrar tu negocio.</p>
+            <p class="plan__price"><b>$0</b><span>/siempre</span></p>
+            <a href="#contacto" class="btn">Empezar gratis</a>
+            <ul class="plan__list">
+              <li class="plan__h">Incluye:</li>
+              <li>Perfil público y catálogo</li>
+              <li>Enlace y QR para compartir</li>
+              <li>Publicar pagando por cada uso</li>
+              <li>IA simple, pagando por cada uso</li>
+              <li class="plan__h">No incluye:</li>
+              <li class="no">Recetas de Studio</li>
+              <li class="no">Editor de imagen y texto</li>
+              <li class="no">Créditos de IA mensuales</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--main">
+            <span class="plan__badge">El más elegido</span>
+            <h3>Conecta</h3>
+            <p class="plan__who">El punto justo para crecer con resultados predecibles.</p>
+            <!-- PRECIOS DE EJEMPLO: se definen en el catálogo de tarifas (ver README). -->
+            <p class="plan__price"><b data-m="$000" data-a="$0,000">$000</b><span data-m="/mes" data-a="/año">/mes</span></p>
+            <a href="#contacto" class="btn btn--fill">Elegir Conecta</a>
+            <ul class="plan__list">
+              <li class="plan__h">Todo lo de Esencial, y además:</li>
+              <li>Recetas validadas de Conecta Studio</li>
+              <li>Editor de imagen y texto</li>
+              <li>Créditos de IA cada mes</li>
+              <li>Cuota de publicaciones incluida</li>
+              <li>Prueba de Studio de cortesía</li>
+            </ul>
+          </article>
+
+          <article class="plan">
+            <h3>Pro</h3>
+            <p class="plan__who">El departamento de marketing completo, sin tener uno.</p>
+            <p class="plan__price"><b data-m="$000" data-a="$0,000">$000</b><span data-m="/mes" data-a="/año">/mes</span></p>
+            <a href="#contacto" class="btn">Ir a Pro</a>
+            <ul class="plan__list">
+              <li class="plan__h">Todo lo de Conecta, y además:</li>
+              <li>Suite de marketing: calendario y plan editorial</li>
+              <li>Programación de publicaciones</li>
+              <li>Cupones con atribución e informes</li>
+              <li>Métricas avanzadas</li>
+              <li>Más créditos de IA</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="pricing__note" data-reveal="up">¿También usas Conecta Control? Pregunta por el paquete conjunto.</p>
+      </div>
+    </section>
+
+    <!-- ============ Preguntas frecuentes (sección clara) ============ -->
+    <section class="section section--light faq" id="faq">
+      <div class="container faq__grid">
+        <header class="section__head" data-reveal="up">
+          <p class="eyebrow">// Preguntas frecuentes</p>
+          <h2 class="h2">Lo que más nos preguntan<span class="us">_</span></h2>
+          <p class="section__lead">¿No ves tu duda? Escríbenos abajo y te respondemos.</p>
+        </header>
+
+        <div class="acc" data-reveal="up">
+          <div class="acc__item is-open">
+            <button type="button" class="acc__q" aria-expanded="true"><span class="acc__n">01</span>¿Necesito Conecta Control para usar Conecta Negocios?<i aria-hidden="true"></i></button>
+            <div class="acc__a"><div><p>No. Son dos productos independientes que se pueden conectar. Puedes usar solo Negocios, solo Control, o los dos vinculados con un botón.</p></div></div>
+          </div>
+          <div class="acc__item">
+            <button type="button" class="acc__q" aria-expanded="false"><span class="acc__n">02</span>¿Cuánto cuesta empezar?<i aria-hidden="true"></i></button>
+            <div class="acc__a"><div><p>Nada. El plan Esencial es gratuito: tienes perfil y catálogo desde el primer día. Solo pagas por lo que uses, como publicar o mejorar un texto con IA.</p></div></div>
+          </div>
+          <div class="acc__item">
+            <button type="button" class="acc__q" aria-expanded="false"><span class="acc__n">03</span>¿Mis clientes tienen que pagar o registrarse?<i aria-hidden="true"></i></button>
+            <div class="acc__a"><div><p>No pagan nunca. Ven tus productos, reaccionan, comentan y te escriben directo. Tú decides cómo entregas lo que venden.</p></div></div>
+          </div>
+          <div class="acc__item">
+            <button type="button" class="acc__q" aria-expanded="false"><span class="acc__n">04</span>¿Puedo cobrar si se me va el internet?<i aria-hidden="true"></i></button>
+            <div class="acc__a"><div><p>Sí. La caja de Conecta Control sigue cobrando y guarda las ventas para mandarlas cuando regrese la conexión.</p></div></div>
+          </div>
+          <div class="acc__item">
+            <button type="button" class="acc__q" aria-expanded="false"><span class="acc__n">05</span>¿Y si mi negocio trabaja distinto?<i aria-hidden="true"></i></button>
+            <div class="acc__a"><div><p>Puedes pedir un módulo a la medida: nos cuentas qué haces hoy y cómo lo quieres, te cotizamos y lo construimos solo para ti, con soporte directo.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contacto ============ -->
+    <section class="section cta" id="contacto">
+      <div class="cta__bg" aria-hidden="true">
+        <!-- IMAGEN: cta-fondo -->
+        <img src="assets/img/cta-fondo.svg" alt="" width="1920" height="900" loading="lazy">
+      </div>
+      <div class="container cta__grid">
+        <header class="section__head" data-reveal="up">
+          <p class="eyebrow">// Contáctanos</p>
+          <h2 class="h2 cta__title">Empecemos<br>a conectar<span class="us">_</span></h2>
+          <p class="section__lead">Comentarios, dudas o una cotización para tu negocio. Escríbenos y te respondemos.</p>
+          <a class="cta__mail" href="mailto:hola@tu-dominio.com">hola@tu-dominio.com</a>
+        </header>
+
+        <form class="form" id="form" novalidate data-reveal="up">
+          <label class="field">
+            <span>Nombre *</span>
+            <input type="text" name="nombre" autocomplete="name" required placeholder="¿Cómo te llamas?">
+          </label>
+          <label class="field">
+            <span>Correo *</span>
+            <input type="email" name="correo" autocomplete="email" required placeholder="tu@correo.com">
+          </label>
+          <label class="field">
+            <span>Motivo</span>
+            <select name="motivo">
+              <option>Quiero una cotización</option>
+              <option>Tengo una duda</option>
+              <option>Quiero dejar un comentario</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Cuéntanos de tu negocio *</span>
+            <textarea name="mensaje" rows="4" required placeholder="¿Qué vendes y qué te gustaría resolver?"></textarea>
+          </label>
+          <button type="submit" class="btn btn--fill">Enviar mensaje</button>
+          <p class="form__ok" id="form-ok" role="status" aria-live="polite" hidden>¡Gracias! Recibimos tu mensaje y te escribimos pronto.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Pie ============ -->
+  <footer class="ft">
+    <div class="container">
+      <div class="ft__top">
+        <p class="ft__brand">Conecta<span>_</span></p>
+        <p class="ft__slogan">Tu puerta a la tecnología.</p>
+      </div>
+      <div class="ft__bottom">
+        <p>© <span id="year">2026</span> Conecta Negocios. Todos los derechos reservados.</p>
+        <nav aria-label="Legal y redes">
+          <a href="#">Aviso de privacidad</a>
+          <a href="#">Condiciones</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="gotop" id="gotop" aria-label="Volver arriba"><span>↑</span></button>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

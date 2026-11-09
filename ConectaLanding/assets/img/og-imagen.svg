@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Imagen para compartir en redes (Open Graph): Logo de Conecta con el slogan «Tu puerta a la tecnología» sobre el fondo azul y morado. Exportar como PNG o JPG de 1200×630 y apuntar la etiqueta og:image a ese archivo.">
+<title>Imagen para compartir en redes (Open Graph)</title>
+<desc>Logo de Conecta con el slogan «Tu puerta a la tecnología» sobre el fondo azul y morado. Exportar como PNG o JPG de 1200×630 y apuntar la etiqueta og:image a ese archivo.</desc>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14163a"/><stop offset="0.55" stop-color="#1a1040"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="r1" cx="0.15" cy="0" r="0.8"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.35"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="r2" cx="1" cy="0" r="0.7"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<rect width="1200" height="630" fill="url(#r1)"/>
+<rect width="1200" height="630" fill="url(#r2)"/>
+<rect x="16" y="16" width="1168" height="598" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="14 10"/>
+<g font-family="'Segoe UI', Roboto, Arial, sans-serif">
+<g transform="translate(571.5 165) scale(2.375)" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-5-5L5 21"/></g>
+<text x="600" y="266" text-anchor="middle" font-size="26" font-weight="700" letter-spacing="3" fill="#ffffff">IMAGEN PENDIENTE</text>
+<text x="600" y="296" text-anchor="middle" font-size="22" fill="#7c5cff">Imagen para compartir en redes (Open Graph) · og-imagen.svg · 1200×630</text>
+<text x="600" y="352" text-anchor="middle" font-size="26" fill="#a7b0c9">Logo de Conecta con el slogan «Tu puerta a la</text>
+<text x="600" y="390" text-anchor="middle" font-size="26" fill="#a7b0c9">tecnología» sobre el fondo azul y morado. Exportar</text>
+<text x="600" y="428" text-anchor="middle" font-size="26" fill="#a7b0c9">como PNG o JPG de 1200×630 y apuntar la etiqueta</text>
+<text x="600" y="466" text-anchor="middle" font-size="26" fill="#a7b0c9">og:image a ese archivo.</text>
+</g>
+</svg>

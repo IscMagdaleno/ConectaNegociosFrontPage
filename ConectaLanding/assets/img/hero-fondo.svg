@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="Fondo de la portada (hero): Foto de ambiente: dueña o dueño de un negocio local (tienda, cafetería, papelería) atendiendo con el celular en la mano. Luz cálida y zonas oscuras a la izquierda, para que el texto blanco se lea bien.">
+<title>Fondo de la portada (hero)</title>
+<desc>Foto de ambiente: dueña o dueño de un negocio local (tienda, cafetería, papelería) atendiendo con el celular en la mano. Luz cálida y zonas oscuras a la izquierda, para que el texto blanco se lea bien.</desc>
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14163a"/><stop offset="0.55" stop-color="#1a1040"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="r1" cx="0.15" cy="0" r="0.8"><stop offset="0" stop-color="#7c5cff" stop-opacity="0.35"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></radialGradient>
+<radialGradient id="r2" cx="1" cy="0" r="0.7"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.22"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1920" height="1080" fill="url(#g)"/>
+<rect width="1920" height="1080" fill="url(#r1)"/>
+<rect width="1920" height="1080" fill="url(#r2)"/>
+<rect x="27" y="27" width="1866" height="1026" rx="32" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2" stroke-dasharray="14 10"/>
+<g font-family="'Segoe UI', Roboto, Arial, sans-serif">
+<g transform="translate(934 86) scale(2.1666666666666665)" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-5-5L5 21"/></g>
+<text x="960" y="178" text-anchor="middle" font-size="22" font-weight="700" letter-spacing="3" fill="#ffffff">IMAGEN PENDIENTE</text>
+<text x="960" y="205" text-anchor="middle" font-size="19" fill="#7c5cff">Fondo de la portada (hero) · hero-fondo.svg · 1920×1080</text>
+<text x="960" y="255" text-anchor="middle" font-size="22" fill="#a7b0c9">Foto de ambiente: dueña o dueño de un negocio local (tienda, cafetería,</text>
+<text x="960" y="287" text-anchor="middle" font-size="22" fill="#a7b0c9">papelería) atendiendo con el celular en la mano. Luz cálida y zonas oscuras a</text>
+<text x="960" y="319" text-anchor="middle" font-size="22" fill="#a7b0c9">la izquierda, para que el texto blanco se lea bien.</text>
+</g>
+</svg>
